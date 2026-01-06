@@ -2,10 +2,13 @@
 // import styles from "./page.module.css";
 // import "semantic-ui-css/semantic.min.css";
 // import { Button } from "semantic-ui-react";
+import { ButtonDemo } from "./components/ButtonDemo";
+
 export default function Home() {
   return (
     <div>
       <h2>Games Shop</h2>
+      <ButtonDemo />
       <div>
         {/* <Button primary>Buy Now</Button>
         <Button secondary>More Info</Button> */}
