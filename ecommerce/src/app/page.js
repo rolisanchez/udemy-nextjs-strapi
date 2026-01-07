@@ -3,16 +3,27 @@
 // import "semantic-ui-css/semantic.min.css";
 // import { Button } from "semantic-ui-react";
 import { ButtonDemo } from "./components/ButtonDemo";
-
+import { Button, Title, Text } from '@mantine/core';
 export default function Home() {
   return (
     <div>
       <h2>Games Shop</h2>
       <ButtonDemo />
+      <a href="/products">Go to Products Page</a>
       <div>
         {/* <Button primary>Buy Now</Button>
         <Button secondary>More Info</Button> */}
       </div>
+
+      <Title ta="center" mt={100}>
+        Welcome to{' '}
+        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
+          Next with Mantine
+        </Text>
+      </Title>
+      <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }} size="md" mt={50}>
+        Get Started
+      </Button>
     </div>
   )
 };
