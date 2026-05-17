@@ -4,6 +4,7 @@
 // import { Button } from "semantic-ui-react";
 import { ButtonDemo } from "./components/ButtonDemo";
 import { Button, Title, Text } from '@mantine/core';
+
 export default function Home() {
   return (
     <div>
@@ -11,8 +12,9 @@ export default function Home() {
       <ButtonDemo />
       <a href="/products">Go to Products Page</a>
       <div>
-        {/* <Button primary>Buy Now</Button>
-        <Button secondary>More Info</Button> */}
+        <Button className="primaryButton" size="sm" mt={50}>
+          Ir al login
+        </Button>
       </div>
 
       <Title ta="center" mt={100}>
@@ -21,9 +23,7 @@ export default function Home() {
           Next with Mantine
         </Text>
       </Title>
-      <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }} size="md" mt={50}>
-        Get Started
-      </Button>
+
     </div>
   )
 };

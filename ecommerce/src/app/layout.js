@@ -1,20 +1,20 @@
 import { Geist, Geist_Mono } from "next/font/google";
 // import "./globals.css";
-import "@/app/scss/global.scss";
 
 // const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+  //   variable: "--font-geist-sans",
+  //   subsets: ["latin"],
+  // });
+  
+  // const geistMono = Geist_Mono({
+    //   variable: "--font-geist-mono",
+    //   subsets: ["latin"],
+    // });
+    
+    import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
+    import '@mantine/core/styles.css';
+    import "@/app/scss/global.scss";
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-import '@mantine/core/styles.css';
-
-import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 
 import { theme } from '../theme';
 
